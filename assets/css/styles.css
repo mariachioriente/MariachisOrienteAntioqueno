@@ -6,8 +6,9 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  --first-color: #069C54;
-  --first-color-alt: #048654;
+  --first-color: rgba(210,179,86,0.8);;
+  --first-color-alt:rgba(173, 141, 42, 0.8);
+  --first-color-lighten: rgba(210,179,86,0.6);
   --title-color: #393939;
   --text-color: #707070;
   --text-color-light: #A6A6A6;
@@ -226,7 +227,7 @@ img{
   justify-content: center;
   align-items: center;
   padding: .3rem;
-  background: rgba(6,156,84,.5);
+  background: var(--first-color-lighten);
   border-radius: .4rem;
   z-index: var(--z-tooltip);
   transition: .4s;
