@@ -159,6 +159,7 @@ img{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 4px;
 }
 
 @media screen and (max-width: 768px){
