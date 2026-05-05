@@ -34,70 +34,7 @@ Contenido Expandido – Agregar más páginas/secciones con contenido de valor.
 
 Automatización – Sistema de reservas o cotizaciones automatizadas.
 
-� PLAN DE SEO LOCAL
-
-Para lograr el objetivo de "SEO Local Avanzado", implementaremos el siguiente plan paso a paso, siguiendo las reglas del proyecto (sin frameworks externos, manteniendo HTML/CSS/JS vanilla, y enfocándonos en contenido de valor).
-
-### 1. Investigación y Estrategia de Palabras Clave
-- **Objetivo**: Identificar términos de búsqueda locales relevantes.
-- **Acciones**:
-  - Usar Google Keyword Planner y herramientas gratuitas para buscar volúmenes de "mariachis en [municipio]", "serenatas en Oriente Antioqueño", "música para bodas en Rionegro", etc.
-  - Priorizar palabras clave con alto volumen local y baja competencia.
-- **Implementación en Sitio**: Integrar naturalmente estas palabras clave en títulos, descripciones y contenido.
-
-### 2. Optimización On-Page
-- **Objetivo**: Hacer que el sitio sea fácilmente indexable por motores de búsqueda locales.
-- **Acciones**:
-  - Actualizar meta titles y descriptions con palabras clave locales (ej: "Mariachis en Rionegro - Serenatas Profesionales").
-  - Usar headings (H1, H2) con términos como "Servicios de Mariachi en Oriente Antioqueño".
-  - Implementar Schema.org LocalBusiness markup para incluir dirección, teléfono, servicios (ya parcialmente implementado, expandir).
-  - Asegurar que todas las páginas sean mobile-first y carguen rápido (convertir imágenes a WebP, lazy loading).
-- **Reglas Cumplidas**: Mantener estructura HTML semántica, agregar comentarios en código.
-
-### 3. Google My Business (GMB)
-- **Objetivo**: Aparecer en el mapa y resultados locales de Google.
-- **Acciones**:
-  - Reclamar y verificar el perfil de GMB para "Mariachis de Oriente Antioqueño".
-  - Completar perfil con: fotos de alta calidad, horarios de atención, servicios detallados, sitio web, WhatsApp.
-  - Agregar posts regulares sobre eventos locales y promociones.
-  - Gestionar reseñas: responder a todas, pedir feedback a clientes.
-- **Implementación en Sitio**: Enlazar el perfil de GMB desde el sitio web.
-
-### 4. Contenido Expandido y Local
-- **Objetivo**: Proporcionar valor a la audiencia local y mejorar engagement.
-- **Acciones**:
-  - Crear páginas dedicadas para cada municipio objetivo (Rionegro, Llanogrande, etc.) con información específica.
-  - Agregar sección de blog con artículos como "Historia de los Mariachis en Antioquia", "Ideas para Serenatas Románticas", "Eventos en Oriente Antioqueño".
-  - Incluir testimonios de clientes locales con fotos y nombres (con permiso).
-  - Integrar Google Maps mostrando cobertura geográfica.
-- **Reglas Cumplidas**: Contenido en español colombiano, call-to-action a WhatsApp en cada página.
-
-### 5. Backlinks y Presencia Local
-- **Objetivo**: Construir autoridad local.
-- **Acciones**:
-  - Listarse en directorios locales: páginas amarillas, asociaciones de eventos en Antioquia.
-  - Colaborar con hoteles, restaurantes y organizadores de eventos para enlaces recíprocos.
-  - Participar en redes sociales locales (Facebook groups, Instagram de municipios).
-- **Implementación en Sitio**: Agregar enlaces a perfiles sociales y directorios.
-
-### 6. Monitoreo y Análisis
-- **Objetivo**: Medir progreso y ajustar estrategia.
-- **Acciones**:
-  - Configurar Google Analytics y Search Console para rastrear tráfico local.
-  - Monitorear rankings para palabras clave locales semanalmente.
-  - Usar herramientas como SEMrush o Ahrefs (gratuitas inicialmente) para análisis.
-  - KPIs: Aumento en impresiones locales, clics a sitio, conversiones a WhatsApp.
-- **Reglas Cumplidas**: Mantener compatibilidad con GitHub Pages.
-
-### Cronograma Sugerido
-- **Mes 1**: Investigación de palabras clave y optimización on-page básica.
-- **Mes 2**: Configurar GMB y crear contenido inicial.
-- **Mes 3**: Expandir contenido y buscar backlinks.
-- **Mes 4+**: Monitoreo continuo y ajustes.
-
-Este plan se implementará gradualmente, priorizando cambios de alto impacto con bajo esfuerzo, y midiendo resultados con métricas claras.
-
-�📐 REGLAS DE TRABAJO
+📐 REGLAS DE TRABAJO
 1. MANEJO DE CÓDIGO
 ✅ Siempre proporciona el archivo completo cuando se modifique HTML, CSS o JS.
 

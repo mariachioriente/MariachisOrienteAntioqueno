@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://mariachioriente.github.io/MariachisOrienteAntioqueno/</loc>
+    <lastmod>2024-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://mariachioriente.github.io/MariachisOrienteAntioqueno/rionegro.html</loc>
+    <lastmod>2024-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Agregar más URLs aquí cuando se creen más páginas -->
+</urlset>

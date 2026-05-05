@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mariachioriente.github.io/MariachisOrienteAntioqueno/sitemap.xml
