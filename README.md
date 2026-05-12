@@ -34,6 +34,23 @@ Contenido Expandido – Agregar más páginas/secciones con contenido de valor.
 
 Automatización – Sistema de reservas o cotizaciones automatizadas.
 
+### Instrucciones para Configuración Externa
+
+#### Google My Business (GMB)
+Para aparecer en búsquedas locales de Google:
+1. Ve a https://www.google.com/business/ y crea una cuenta.
+2. Busca "Mariachis de Oriente Antioqueño" o crea un nuevo perfil.
+3. Verifica la propiedad (por teléfono, email o postal).
+4. Completa toda la información: dirección (Oriente Antioqueño), teléfono (+573228335897), sitio web, fotos.
+5. Agrega servicios y horarios (24/7 disponible).
+6. Publica posts sobre eventos locales y promociones.
+
+#### Google Analytics y Search Console
+Para monitorear el rendimiento:
+1. **Analytics**: Ve a https://analytics.google.com/, crea propiedad GA4, agrega URL del sitio, copia el código de seguimiento y pégalo en el <head> de todas las páginas HTML.
+2. **Search Console**: Ve a https://search.google.com/search-console/, agrega propiedad, verifica con HTML tag, envía sitemap.xml.
+3. Configura objetivos para clics a WhatsApp y conversiones.
+
 📐 REGLAS DE TRABAJO
 1. MANEJO DE CÓDIGO
 ✅ Siempre proporciona el archivo completo cuando se modifique HTML, CSS o JS.
