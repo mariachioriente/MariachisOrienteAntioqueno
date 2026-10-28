@@ -30,6 +30,13 @@
   <!-- Canonical -->
   <link rel="canonical" href="https://mariachioriente.github.io/MariachisOrienteAntioqueno/" />
 
+  <!--========== FAVICON ==========-->
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/favicon.png">
+
+  <!--========== GOOGLE ANALYTICS ==========-->
+  <script src="assets/js/analytics.js"></script>
+
   <!--========== BOX ICONS ==========-->
   <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
@@ -45,13 +52,15 @@
   <script type="application/ld+json">
 		{
 		  "@context": "https://schema.org",
-		  "@type": "MusicGroup",
+		  "@type": ["LocalBusiness", "MusicGroup"],
+		  "sameAs": ["https://www.facebook.com/profile.php?id=61570575835097", "https://www.instagram.com/mariachisdeloriente/"],
 		  "name": "Mariachis de Oriente Antioqueño",
 		  "description": "Mariachis en Oriente Antioqueño: Serenatas profesionales en Rionegro, Llanogrande, Marinilla y más. Música tradicional para cumpleaños, amor, bodas y eventos especiales.",
 		  "image": "https://mariachioriente.github.io/MariachisOrienteAntioqueno/assets/img/mariachi.png",
 		  "address": {
 			"@type": "PostalAddress",
-			"addressLocality": "Oriente Antioqueño",
+			"addressLocality": "Rionegro",
+			"addressRegion": "Antioquia",
 			"addressCountry": "CO",
 			"postalCode": "054020"
 		  },
@@ -171,7 +180,7 @@
           </div>
         </div>
 
-        <img src="assets/img/mariachi.png" alt="" class="home__img" loading="lazy">
+        <img src="assets/img/mariachi.webp" alt="Mariachis en Oriente Antioqueño tocando una serenata" class="home__img" fetchpriority="high">
       </div>
     </section>
 
@@ -193,7 +202,7 @@
           </div>
         </div>
 
-        <img src="assets/img/banner-image-1.png" alt="" class="about__img" loading="lazy">
+        <img src="assets/img/banner-image-1.webp" alt="Grupo de mariachis del Oriente Antioqueño" class="about__img" loading="lazy">
       </div>
     </section>
 
@@ -262,7 +271,7 @@
             </p>
         </div>
 
-        <img src="assets/img/madres.png" alt="Mariachis en evento especial" class="app__img" loading="lazy">
+        <img src="assets/img/madres.webp" alt="Mariachis en evento especial" class="app__img" loading="lazy">
       </div>
     </section>
 
@@ -352,7 +361,7 @@
         </ul>
       </div>
       <div class="footer__content">
-        <h3 class="footer__title">Services</h3>
+        <h3 class="footer__title">Servicios</h3>
         <ul>
           <li>Bodas</li>
           <li>Serenatas de amor</li>
@@ -374,6 +383,12 @@
       </div>
     </div>
 
+    <div class="review__button">
+      <a href="https://g.page/r/CSPR6GkL9kacEBM/review" target="_blank" rel="noopener" class="button">
+        <i class='bx bxs-star'></i> Califícanos en Google
+      </a>
+    </div>
+
     <p class="footer__copy">&#169; 2024 Todos los derechos reservados.</p>
   </footer>
 
@@ -384,4 +399,4 @@
   <script src="assets/js/main.js"></script>
 </body>
 
-</html>
+</html>
