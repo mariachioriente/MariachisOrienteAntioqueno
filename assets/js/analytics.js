@@ -1,6 +1,6 @@
 /*=============== GOOGLE ANALYTICS 4 ===============*/
 // Reemplaza con tu ID de medición de GA4 (Administrar > Flujos de datos > Web)
-const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'
+const GA_MEASUREMENT_ID = 'G-7J5GB5DQ80'
 
 if (!GA_MEASUREMENT_ID.includes('XXXX')) {
     const gaScript = document.createElement('script')
