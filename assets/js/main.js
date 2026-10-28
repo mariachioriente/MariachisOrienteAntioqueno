@@ -8,6 +8,15 @@ const showMenu = (toggleId, navId) =>{
         toggle.addEventListener('click', ()=>{
             // We add the show-menu class to the div tag with the nav__menu class
             nav.classList.toggle('show-menu')
+            toggle.querySelector('i').classList.toggle('bx-x')
+        })
+
+        // Close the menu when tapping outside of it
+        document.addEventListener('click', (e)=>{
+            if(nav.classList.contains('show-menu') && !nav.contains(e.target) && !toggle.contains(e.target)){
+                nav.classList.remove('show-menu')
+                toggle.querySelector('i').classList.remove('bx-x')
+            }
         })
     }
 }
@@ -20,6 +29,7 @@ function linkAction(){
     const navMenu = document.getElementById('nav-menu')
     // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show-menu')
+    document.querySelector('#nav-toggle i').classList.remove('bx-x')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
@@ -32,12 +42,15 @@ function scrollActive(){
     sections.forEach(current =>{
         const sectionHeight = current.offsetHeight
         const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id')
+        const sectionId = current.getAttribute('id')
+        const link = document.querySelector('.nav__menu a[href="#' + sectionId + '"]')
+        // Some sections (e.g. coverage) have no menu link
+        if(!link) return
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+            link.classList.add('active-link')
         }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+            link.classList.remove('active-link')
         }
     })
 }
@@ -94,7 +107,8 @@ const sr = ScrollReveal({
     origin: 'top',
     distance: '30px',
     duration: 1000,
-    reset: true
+    reset: false,
+    mobile: true
 });
 
 sr.reveal(`.home__data, .home__img,

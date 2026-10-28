@@ -61,6 +61,8 @@
 
 html{
   scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+  -webkit-text-size-adjust: 100%;
 }
 
 /*========== Variables Dark theme ==========*/
@@ -88,6 +90,8 @@ body{
   background-color: var(--body-color);
   color: var(--text-color);
   line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
 
 h1,h2,h3,p,ul{
@@ -247,7 +251,30 @@ img{
 /* Show scrolltop */
 .show-scroll{
   visibility: visible;
-  bottom: 1.5rem;
+  bottom: calc(5.5rem + env(safe-area-inset-bottom));
+}
+
+/* WhatsApp flotante */
+.whatsapp-float{
+  position: fixed;
+  right: 1rem;
+  bottom: calc(1.25rem + env(safe-area-inset-bottom));
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #25D366;
+  color: #FFF;
+  font-size: 2rem;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,.25);
+  z-index: var(--z-fixed);
+  transition: .3s;
+}
+
+.whatsapp-float:hover{
+  transform: scale(1.08);
 }
 
 /*========== HOME ==========*/
@@ -566,4 +593,114 @@ img{
     .home__container {
         height: 640px;
     }
+}
+
+/*========== MOBILE ==========*/
+@media screen and (max-width: 575px){
+  .section{
+    padding: 3rem 0 1.5rem;
+  }
+
+  /* Home: el contenido define la altura para que nada se corte */
+  .home__container{
+    height: auto;
+    grid-template-columns: minmax(0, 1fr);
+    padding: 3rem 0 1rem;
+    gap: 1.5rem;
+  }
+
+  .home__title{
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+
+  .home__data{
+    text-align: center;
+  }
+
+  .home__subtitle{
+    margin-bottom: var(--mb-3);
+  }
+
+  .home__img{
+    width: 280px;
+  }
+
+  .about__img, .app__img{
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* Botones con área táctil cómoda */
+  .button{
+    padding: .9rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .nav__link{
+    display: inline-block;
+    padding: .25rem 1rem;
+  }
+
+  .nav__toggle{
+    display: flex;
+    padding: .5rem;
+    margin-right: -.5rem;
+    font-size: 1.9rem;
+    color: var(--title-color);
+  }
+
+  .footer__social{
+    display: inline-block;
+    padding: .25rem;
+    margin-right: var(--mb-1);
+  }
+
+  /* Cobertura: tarjetas en 2 columnas, toda la tarjeta es clickeable */
+  #coverage .services__container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: .75rem;
+  }
+
+  #coverage .services__content{
+    position: relative;
+    padding: 1rem .5rem;
+    background-color: var(--container-color);
+    border-radius: .5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,.08);
+  }
+
+  #coverage .services__title a{
+    color: var(--title-color);
+  }
+
+  #coverage .services__title a::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+
+  #coverage .services__description{
+    padding: 0;
+    font-size: var(--smaller-font-size);
+  }
+
+  .services__description{
+    padding: 0 .5rem;
+  }
+
+  .footer__container{
+    text-align: center;
+  }
+
+  /* Espacio para que el botón flotante no tape el pie de página */
+  .footer{
+    padding-bottom: 6rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce){
+  html{
+    scroll-behavior: auto;
+  }
 }
